@@ -1,0 +1,599 @@
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+public class SquareStarPattern {
+	public static void main(String[] args) {
+		for(int i=1;i<=5;i++) {
+			for(int j=1;j<=5;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+	
+}
+
+
+-------------------------------------------
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+
+int n=5;
+		//First Half Pyramid
+		for(int i=1;i<n;i++) {
+			for(int j=n;j>i;j--) {
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		
+		//First Half Pyramid
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<i;j++) {
+				System.out.print(" ");
+			}
+			for(int k=i;k<=n;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+---------------------------------------------
+
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+
+int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=(2*i)-1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		
+		for(int i=n-1;i>=1;i--) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=(2*i)-1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+-------------------------------------------
+
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+----------------------------------------------
+* * * * * * * * * * 
+* * * *     * * * * 
+* * *         * * * 
+* *             * * 
+*                 * 
+
+int n=5;
+		for(int i=5;i>=1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			for(int k=1;k<=2*(n-i);k++) {
+				System.out.print(" "+" ");
+			}
+			for(int l=1;l<=i;l++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+-------------------------------------------
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+public class DownRightTriangle {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+---------------------------------------------
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+public class MirroredRightTriangle {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+--------------------------------------------
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+public class RightTriangle {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+--------------------------------------------
+
+
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+public class H_ShapePwttern {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			for(int k=1;k<=2*(n-i);k++) {
+				System.out.print(" ");
+			}
+			for(int l=1;l<=i;l++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for(int i=n-1;i>=1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			for(int k=1;k<=2*(n-i);k++) {
+				System.out.print(" ");
+			}
+			for(int l=1;l<=i;l++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
+}
+
+-------------------------------------------------------
+
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+
+public class HallowSquarePattern {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||j==1||i==n||j==n) {
+					System.out.print("*"+" ");
+				}else {
+					System.out.print(" "+" ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	
+}
+-----------------------------------------------------
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+public class InvertedPyramidStarPattern {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=5;i>=1;i--) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=(2*i)-1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+---------------------------------------------------
+* * * * * * * * * * 
+* * * *     * * * * 
+* * *         * * * 
+* *             * * 
+*                 * 
+* *             * * 
+* * *         * * * 
+* * * *     * * * * 
+* * * * * * * * * * 
+
+public class K_Plus_K_Pattern {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			for(int k=1;k<=2*(n-i);k++) {
+				System.out.print(" "+" ");
+			}
+			for(int l=1;l<=i;l++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			for(int k=1;k<=2*(n-i);k++) {
+			System.out.print(" "+" ");
+			}
+			for(int l=1;l<=i;l++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+------------------------------------------------------
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+public class K_ShapePattern {
+	public static void main(String[] args) {
+		int n=5;
+		//Upper decreasing triangle
+		//We have to reduce one iteration to get shape
+		//we can write i>=1 we will not get shape
+		for(int i=n;i>1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		//Lower increasing triangle
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+------------------------------------------------
+
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+public class MirroredRightPasicalTriangle {
+	public static void main(String[] args) {
+		int n=5;
+		//Upper mirrored right
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		//Lower mirrored left
+		for(int i=n-1;i>=1;i--) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+----------------------------------------------
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+public class RightPasicalTriangle {
+	public static void main(String[] args) {
+		int n=5;
+		//Upper increasing Triangle
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		
+		//Lower decreasing triangle
+		//We have to reduce one iteration to get exact shape
+		for(int i=n-1;i>=1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+-------------------------------------------
+  *  
+  *  
+*****
+  *  
+  *  
+
+public class Plusk_Plus_Pattern {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==3||j==3) {
+					System.out.print("*");
+				}else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+
+-----------------------------------------------
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+public class PyramidPattern {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=(2*i)-1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+------------------------------------------------
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+public class ReversePyramidPattern {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=(2*i)-1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+}
+
+
+----------------------------------------------
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+
+public class PyramidStarPattern {
+	public static void main(String[] args) {
+		for(int i=1;i<=5;i++) {
+			for(int j=5;j>i;j--) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+---------------------------------------
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+
+public class Reverse_K_Shape {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>1;i--) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+	
+}
+------------------------------------------------
+
+*                 * 
+* *             * * 
+* * *         * * * 
+* * * *     * * * * 
+* * * * * * * * * * 
+
+public class RightPlusMirroredRightTriangles {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*"+" ");
+			}
+			for(int k=1;k<=2*(n-i);k++) {
+				System.out.print(" "+" ");
+			}
+			for(int l=1;l<=i;l++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+-------------------------------------------------
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+
+public class SandGlassStarPattern {
+	public static void main(String[] args) {
+		int n=5;
+		//Reduce one iteration
+		for(int i=n;i>1;i--) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=(2*i)-1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		//Lower half
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=(n-i);j++) {
+				System.out.print(" "+" ");
+			}
+			for(int k=1;k<=(2*i)-1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+---------------------------------------------
+
+
